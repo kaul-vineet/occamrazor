@@ -84,5 +84,8 @@ app.post("/", (req, res) => {
   `);
 });
 
-console.log("Listening on Port 5000");
-server.listen(5000);
+//console.log("Listening on Port");
+//server.listen(5000);
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
